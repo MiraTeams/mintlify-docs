@@ -1,11 +1,8 @@
 :root {
-  --content-width: 900px;
-  --sidebar-width: 18rem;
   --mira-border: #e4e4e7;
   --mira-muted: #71717a;
   --mira-foreground: #18181b;
   --mira-card: #fafafa;
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", "Hiragino Kaku Gothic ProN", sans-serif;
 }
 html.dark {
   --mira-border: rgba(255, 255, 255, 0.1);
@@ -13,15 +10,6 @@ html.dark {
   --mira-foreground: #d4d4d4;
   --mira-card: #404040;
 }
-body { font-family: var(--font-sans); }
-#content { font-size: 16px; line-height: 1.65; }
-#sidebar { background: #f4f4f5; }
-html.dark #sidebar { background: #1f1f1f; }
-.card { border-radius: 16px; border-color: var(--mira-border); }
-.card:hover { border-color: var(--mira-muted); }
-#content img { border-radius: 8px; }
-.callout { border-color: var(--mira-border); background: var(--mira-card); color: var(--mira-foreground); }
-.callout [data-component-part="callout-icon"] { display: none; }
 .text-fd-muted-foreground { color: var(--mira-muted); }
 .text-fd-foreground { color: var(--mira-foreground); }
 .border-fd-border { border-color: var(--mira-border); }

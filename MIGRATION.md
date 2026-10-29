@@ -14,8 +14,10 @@ Target: https://github.com/mirateams/mintlify-docs.
   SearchLoop are ported as local JSX snippets.
 - Source paths `/{language}/docs/...` and `/{language}/blog/...` retained.
   Section-index and previous starter URLs redirect to the matching new pages.
-- Neutral light/dark branding, system-font stack, card treatment, sidebar
-  colors and logo are adapted to Mintlify's Maple layout. The Next.js
+- This comparison uses Mintlify's native Mint theme with default fonts,
+  layout, cards, callouts and background, retaining the neutral brand palette
+  and logo. Custom CSS is limited to the migrated diagrams and upcoming posts.
+  The Next.js
   application shell cannot be copied unchanged into hosted Mintlify.
 - The existing Next.js consent/analytics runtime and server API routes are
   not copied; migrating those requires a separate deployment integration.

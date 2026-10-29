@@ -87,10 +87,9 @@ for (const language of languages) {
   }
 }
 const config = {
-  $schema: 'https://mintlify.com/docs.json', theme: 'maple', name: 'MiraDay',
+  $schema: 'https://mintlify.com/docs.json', theme: 'mint', name: 'MiraDay',
   description: 'MiraDay documentation and recruiting perspectives.',
   colors: { primary: '#18181B', light: '#E4E4E7', dark: '#18181B' },
-  background: { color: { light: '#FFFFFF', dark: '#262626' } },
   appearance: { default: 'system' }, icons: { library: 'lucide' },
   logo: { light: '/logo/light.svg', dark: '/logo/dark.svg' }, favicon: '/favicon.ico',
   navigation: { languages: navigation },
