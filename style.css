@@ -1,0 +1,29 @@
+:root {
+  --mira-border: #e4e4e7;
+  --mira-muted: #71717a;
+  --mira-foreground: #18181b;
+  --mira-card: #fafafa;
+}
+html.dark {
+  --mira-border: rgba(255, 255, 255, 0.1);
+  --mira-muted: #a3a3a3;
+  --mira-foreground: #d4d4d4;
+  --mira-card: #404040;
+}
+.text-fd-muted-foreground { color: var(--mira-muted); }
+.text-fd-foreground { color: var(--mira-foreground); }
+.border-fd-border { border-color: var(--mira-border); }
+.stroke-fd-border { stroke: var(--mira-border); }
+.stroke-fd-foreground { stroke: var(--mira-foreground); }
+.stroke-fd-muted-foreground { stroke: var(--mira-muted); }
+.stroke-fd-muted-foreground\/60 { stroke: var(--mira-muted); opacity: 0.6; }
+.stroke-fd-background { stroke: #fff; }
+html.dark .stroke-fd-background { stroke: #262626; }
+.fill-fd-foreground { fill: var(--mira-foreground); }
+.fill-fd-muted-foreground { fill: var(--mira-muted); }
+.fill-fd-card { fill: var(--mira-card); }
+.text-diagram-label { font-size: 14px; }
+.text-diagram-caption { font-size: 11px; }
+.mira-upcoming { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px; margin-block: 12px; border: 1px dashed var(--mira-border); border-radius: 12px; }
+.mira-upcoming span { flex-shrink: 0; font-size: 12px; color: var(--mira-muted); }
+@media (max-width: 640px) { .mira-upcoming { align-items: flex-start; flex-direction: column; } }

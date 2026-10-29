@@ -1,0 +1,85 @@
+---
+title: How MiraDay Works
+description: You describe a role and confirm an Ideal Candidate Profile. Mira's Agent Team then searches with MRE (Mira Reasoning Embedding), a reasoning-based retrieval model, and delivers a ranked candidate pool.
+howTo:
+  name: How a MiraDay sourcing task works end to end
+  description: From describing a role to confirming an Ideal Candidate Profile and receiving a ranked candidate pool.
+  totalTime: PT10M
+  steps:
+    - name: You describe the need
+      text: "Paste or upload a job description, upload notes from an intake meeting, or describe the role in plain language. Mira understands implicit criteria; you don't need formal search syntax."
+    - name: Mira proposes an Ideal Candidate Profile
+      text: "When key details are missing or ambiguous, Mira shows a short clarification form to confirm the requirements. Mira then enriches the brief and proposes an Ideal Candidate Profile with three lists: Must-Have, Nice-to-Have, and Avoid."
+    - name: You review and confirm the profile
+      text: "Edit any of the three lists, then choose Search to accept it. Mira starts searching only after you confirm, so the search runs against the bar you set."
+    - name: Mira runs the search
+      text: "Mira hands the search to an Agent Team: at least one sourcing teammate, more when the search is complex. The team searches across many sources with reasoning-based retrieval (MRE), surfaces signals, reasons over what it finds, and searches again, not keyword matching. Each candidate is then evaluated against your confirmed profile."
+    - name: Candidate pool delivered
+      text: "You get a curated candidate pool with name, current role, company, location, most recent work experience, a Qualifications assessment, highest level of education, contact info revealed on demand (uses credits), and a downloadable data file."
+    - name: Iterate
+      text: "Continue the conversation to ask for more candidates, adjust criteria, or start a new search. Each channel is saved in the sidebar."
+---
+
+import { Flow } from "/snippets/flow.jsx";
+
+
+You describe the role and confirm what a great candidate looks like; Mira and its teammates do the searching, reasoning, and matching. Here's the workflow.
+
+<Flow steps={[
+  { icon: "describe", label: "You describe the role" },
+  { icon: "agent", label: "Mira proposes an Ideal Candidate Profile" },
+  { icon: "list", label: "You review & confirm" },
+  { icon: "search", label: "Mira searches, reasons & matches" },
+  { icon: "eye", label: "Candidate pool delivered" },
+  { icon: "repeat", label: "You review & refine" },
+]} />
+
+<Steps>
+
+<Step title="You describe the need">
+Paste or upload a job description, upload notes from an intake meeting, or describe the role in plain language. Mira understands implicit criteria; you don't need formal search syntax.
+</Step>
+
+<Step title="Mira proposes an Ideal Candidate Profile">
+When key details are missing or ambiguous, Mira shows a short clarification form to confirm the requirements with you, so the search aims at the right target. Mira then enriches the brief and proposes an **Ideal Candidate Profile**, a structured summary of the search in three lists: **Must-Have**, **Nice-to-Have**, and **Avoid**. Intake and the profile are run by a built-in [Skill](/en/docs/tools-and-teamwork/skills).
+</Step>
+
+<Step title="You review and confirm the profile">
+The Ideal Candidate Profile is yours to edit. Adjust any of the three lists: add a **Must-Have**, move something into **Nice-to-Have**, or add a competitor to **Avoid**. Then choose **Search** to accept it as-is, or edit first and then search. Mira starts searching only after you confirm, so the search runs against the bar you set. See [how Mira reads your requirements](/en/docs/sourcing/search-filters-and-criteria) for how these criteria shape results.
+</Step>
+
+<Step title="Mira runs the search">
+Once you confirm, Mira hands the search to an [Agent Team](/en/docs/meet-mira/agent-teams): at least one sourcing teammate, more when the search is complex. The search works in a loop, powered by reasoning-based retrieval (MRE): the team searches across many sources, surfaces signals, reasons over what it finds, and decides where to go next, whether to keep digging or to change its search strategy or sources. Each candidate is then evaluated against your confirmed profile, not by keyword matching:
+
+- "At least 5 years of experience": calculated from the career timeline.
+- "From 0 to 1 experience": interpreted as early-stage company building.
+- "Public company background": inferred from organizational context.
+</Step>
+
+<Step title="Candidate pool delivered">
+You get a curated candidate pool with:
+
+- Candidate name, current role, company, and location.
+- Most recent work experience.
+- A Qualifications assessment: how the candidate fits your must-haves, criterion by criterion.
+- Highest level of education.
+- Contact info: LinkedIn is shown by default; email and phone are revealed on demand by clicking **Get email** or **Get phone** (each reveal uses credits).
+- A downloadable data file.
+</Step>
+
+<Step title="Iterate">
+Continue the conversation:
+
+- Ask for more candidates.
+- Adjust criteria ("also include Amsterdam", "prefer startup backgrounds").
+- Start a new search for a different role.
+
+Each channel is saved in the sidebar and can be revisited anytime.
+</Step>
+
+</Steps>
+
+## What's next
+
+- [Key Terms](/en/docs/meet-mira/key-concepts): Agent, candidate pool, and other terms explained.
+- [Quick Start](/en/docs/get-started/quick-start): Run your first sourcing task.

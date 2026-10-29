@@ -1,0 +1,214 @@
+---
+title: Changelog
+description: Recent updates and new features in MiraDay.
+---
+
+## October 2026
+
+### Get a warning before your Credits run out
+Open the Credits balance at the top of the page to see usage, remaining Credits, and the reset date. A warning appears when your allowance is nearly used up.
+
+### Find candidates in your own contacts
+In your own channel, you can ask Mira to search your saved and imported contacts and deliver them alongside candidates from public sources.
+
+### Look for more emails and phone numbers
+Candidate details now include **Enrich email** and **Enrich phone** to search again and merge the results with existing details. Enrichment may consume Credits, and recently enriched details have a waiting period before you can try again.
+
+### Continue on a page you already have open
+With the Mira Browser Extension version 0.4.18 or later connected, you can ask Mira to work on a page you already have open, keeping its current filters and page state.
+
+### Fewer missing candidates from academic and open-source searches
+Fixed an issue that left these candidates out of delivered results. Relevant searches also use GitHub and Hugging Face to find public work and profiles.
+
+### Privacy policies and requests in one place
+The **Privacy Center** brings policy information together and provides an online form for personal information requests.
+
+## September 2026
+
+### Keep frequently used channels within reach
+Pin channels to the sidebar's **Pinned** group to return to them without scrolling through your history.
+
+### Choose whether to receive product update emails
+In **Settings → General**, turn **Product updates** on or off.
+
+### Edit your candidate profile right in the results panel and search again in place
+Previously, adjusting your search meant describing it again in the conversation, and criteria you had deleted from the profile card sometimes found their way back into the next round. Now a collapsible **Ideal Candidate Profile** bar sits at the top of the results panel, showing how many must-have, nice-to-have, and avoid criteria it holds. Expand it to add, edit, or remove criteria one by one, then click **Search** to rerun the search in place with the new profile. If the previous round is still running, you're asked whether to wait for it to finish or start the new search right away. The profile you confirm is used exactly as it is, so deleted criteria stay deleted. Market insights Mira surfaces while sourcing are now labeled **Insight** throughout.
+
+### Delivered lists are more complete and cleaner
+Previously, candidates Mira found through the browser on recruiting platforms such as Liepin often fell away at delivery: they were missing from the list, or their cards were incomplete with no link back to the original platform. These candidates are now delivered in full like those from any other source, and their cards link straight back to the original page. When you ask to search only a specific platform, Mira keeps the search there; if it's temporarily unavailable, Mira asks before switching to another source instead of switching quietly. Mira also now holds back people whose profiles give no indication of what they do. The summary after delivery also no longer repeats what each card already shows, and instead describes the list as a whole, such as which cities and companies the candidates are concentrated in.
+
+### See every email and phone number, and choose whether to include them in downloads
+Previously, a candidate with several emails or phone numbers showed only one, and a second one disappeared on refresh after it was retrieved. Now every email and phone number retrieved is kept: the card shows the first with a count of how many more there are, and the details view and table show them all. Before you download a candidate list, there's a new **Include already enriched contact information** option, checked by default, with multiple values placed in the same cell. Uncheck it and the email and phone columns stay in the file but are left empty. This also fixes the candidate table not scrolling sideways on phones.
+
+### Interface languages cut from 13 to four: Simplified Chinese, Traditional Chinese, English, and Japanese
+The interface used to be switchable between 13 languages. It now offers Simplified Chinese, Traditional Chinese, English, and Japanese. Accounts that had picked another language will see the interface in English, and new visitors are matched to their browser language. This only affects menu and button text: Mira still replies in whatever language you write in, so if you ask in Korean, it answers in Korean.
+
+### Share links now require sign-in to view
+Previously, anyone who opened a share link could see everything in the channel. Now a visitor who isn't signed in sees only the sharer's name and avatar and the channel name, and after signing in they're taken straight back to the link to view the full content. The share panel is also down to one step: opening it generates the link, ready to copy, with no separate **Create** click.
+
+### An outdated browser extension now prompts you to update
+When the extension is below the required version, an update card appears with the exact steps to update: first check for updates manually on your browser's extensions page; if that doesn't work, remove the extension and click **Open store** on the card to reinstall it. With more recent versions of the extension, you can instead click **Update now** to update in one click without leaving the page.
+
+### Choose how many candidates to deliver, and pick more than one experience range
+You can now enter the number of candidates you want in the clarification form, or simply state it in your brief (up to 100 per search), and Mira delivers that many. The years-of-experience question also accepts several ranges at once, such as "1–3 years" and "8–10 years."
+
+### Wider search first, then delivery ranked by relevance
+Previously each source was read only to its first page, so the people at the top weren't necessarily the best fit for the brief. Mira now pulls several pages from each source, removes duplicates, ranks the pool by relevance to the brief, and only then enriches and evaluates the top of the list. Evaluation now runs in batches and is noticeably faster. A brief that covers several roles is sourced separately per role instead of being merged into one list.
+
+### Fixed: enterprise single sign-on bouncing back to the sign-in page
+Previously, some users signing in through enterprise single sign-on (SSO) were sent back to the sign-in page even though sign-in had succeeded, with no message and no luck on retry. This is fixed. If an account really has been disabled, the sign-in page now says so clearly instead of silently returning you.
+
+## August 2026
+
+### Contact buttons that wouldn't respond now work
+Previously, some candidate cards kept showing **No Email** or **No Phone** and wouldn't respond to a click even though the contact details could be retrieved, while others failed every time. A candidate's reveal state and their profile were kept in two separate places that often didn't line up. The two are now merged into one, and **Get Email** and **Get Phone** work as expected for those candidates.
+
+### More reliable delivery of your candidate list
+A search used to run into several problems at delivery: someone on the delivered list couldn't be found anywhere in your candidate pool; a list that should have been cards rendered as a wall of raw code; a search that found nobody returned an error instead of an empty state; a preview flashed "unsupported file format" while it was still loading; and one class of delivery failed outright, leaving only text in the panel. These are all fixed, and everyone on a delivered list can now be found in your pool and followed up on.
+
+### Hard requirements in your brief are now actually enforced
+Previously, writing things like "only people currently employed," "must have a bachelor's degree or above," or "must have worked at this kind of company" often got dropped somewhere along the way, and people who didn't meet them still showed up. These requirements now carry through all three stages (search, filtering, and evaluation), so people who don't meet them no longer reach the delivered list.
+
+### Tell Mira to find another way when it hits a login wall
+When Mira used a browser and reached a site that required a login or a CAPTCHA, the card offered only **Continue**, so you either handled it in the browser yourself or sent another message to work around it. There's now a **Cancel** button: click it and Mira picks a different source or a different approach on its own instead of waiting for you. This also fixes the card previously showing a false red "action failed" message.
+
+### See how far along a task is from the sidebar
+Previously you had to open a task to know whether it had finished. The task list in the sidebar now shows a spinner for a task that's running and a dot for one that finished while you weren't looking, and it stays in sync across your devices and browser tabs.
+
+### Images and PDFs you send now reach Mira properly
+Previously an image or PDF sent in a conversation sometimes never reached Mira at all, and sometimes returned an error. Attachments now come through. A related problem, where PDFs were lost when forwarded alongside other file types in email, is fixed as well.
+
+### A very long PDF no longer freezes the whole conversation
+Previously, once the PDFs uploaded across a conversation added up to too many pages, every following turn in that conversation came back blank. Retrying didn't help, and you had to start over. Mira now switches to a different way of reading those files, and the conversation carries on.
+
+### More complete candidate cards, without duplicates
+Previously some candidates' work history showed only the company and title, with no dates or duration, and one person's LinkedIn profile could appear as two separate links because of regional URL differences. Dates and duration now show in full, and a profile appears only once.
+
+### Refreshed home scenario cards and interface styling
+The scenario cards on the home page have a new version, each with a title, a description, and a few prompts you can use straight away. Channel, the task page, Settings, Contacts, and candidate detail pages also went through a round of styling work, along with fixes to mobile layout.
+
+### Get contact details for several candidates at once
+Previously you could only reveal a candidate's email and phone one person at a time. Now you can multi-select candidates in the list and pull email and phone for several of them in one go (up to 50 per batch). When your remaining balance runs low, you get a clear message instead of a vague "couldn't retrieve."
+
+### Send email with attachments in Mira
+Once you've connected Gmail or Outlook, you can now add attachments when composing and forwarding email. When you forward a message, its original attachments come along, and you can add your own on top.
+
+### A refreshed way to follow your Agent Team's collaboration
+When an Agent Team works, the whole collaboration now unfolds like a group chat: each teammate appears as its own participant in the conversation, showing its status, messages, and deliverables in real time. A new task workspace panel on the right gathers the team's output in one place.
+
+### Paste or drag files in to attach them
+Previously you could only add attachments by clicking the plus button and picking from a file selector, and a screenshot had to be saved to a file first. Now you can paste an image straight from your clipboard into the input box, or paste and drag files in.
+
+## July 2026
+
+### Start using MiraDay right after signing up, no invite code needed
+Previously new users had to activate with an invite code before they could start. Now activation happens as soon as you finish signing up, so you can jump straight in without an invite code.
+
+### Cleaner contact details and profiles for candidates
+A candidate's email and phone now appear as clickable chips, and clicking a candidate card opens their full profile in a side panel, with clear confirmation when you copy a contact detail.
+
+### Settings in one popup you can open anywhere
+Previously changing a setting meant navigating to a separate settings page. Now you can open the settings popup from anywhere, organized into Account, General, Usage & Billing, Team, Skills, and Connectors, and you can upload an avatar, change your email, view usage details, and delete your account.
+
+### Richer, clickable sources and supporting evidence for candidates
+A candidate's card now gathers that person's source profiles in one place (LinkedIn, GitHub, Hugging Face, Twitter, and recruiting platforms), and you can click straight through to the original page. The **More** section also shows supporting evidence from the web and news (article titles, relevant quotes, and publish dates), along with public profiles from platforms like GitHub and Hugging Face, so you can vet a candidate's background more thoroughly.
+
+### Fixed searches that delivered incomplete or empty candidate lists
+Previously some searches had actually found candidates, yet the final delivered list came back empty or incomplete (especially for people found through the browser extension) while the task still showed as finished. This is now fixed, and the people that are found are delivered in full.
+
+### Switch candidate results between card view and table view
+Candidate search results can now switch between a card view and a table view: the table view makes it easy to compare candidates side by side, and the card view makes it easy to read one candidate's full résumé in detail.
+
+### Fixed tasks that kept spinning after they finished
+In some cases a task had actually finished or stopped, but the interface kept showing the loading spinner. Task status now updates promptly and correctly.
+
+### File downloads no longer show garbled text on iPhone and iPad
+Fixed an issue where downloading a file in iOS Safari could garble non-Latin file names or file contents. Downloaded file names and contents now display correctly.
+
+### Contacts: keep the people you find
+Save candidates beyond a single search. Click **Add contact** on a result, or **Import** your own people from PDF, DOCX, CSV, or XLSX files, and they gather in a new **Contacts** page on the sidebar. Each contact has a full profile you can enrich, reveal email and phone, and add notes, so the people you find don't get lost when the channel ends.
+
+### One person, one card across sources
+When the same person turns up in more than one data source, Mira now links those results into a single candidate, instead of showing the same person several times. Your pool reads cleaner and the count reflects real, distinct people.
+
+## June 2026
+
+### Upload audio files
+You can now attach audio files up to 100 MB, such as meeting recordings, role-requirement calls, and interview recordings. Mira listens to them and works from what it hears, continuing with your task.
+
+### Files: every file from your channels in one place
+The résumés and JDs you upload and the data files and reports Mira generates now live together on a dedicated Files page, reachable from the sidebar, instead of being scattered across separate channel threads. Filter by source, type, or channel, search by name, and jump back to the channel any file belongs to.
+
+### Connect your Gmail and Outlook
+Open the Connectors entry in your personal settings or the channel input area to connect your own Gmail or Outlook account. Once connected, Mira can handle email correspondence directly through your mailbox while working on a channel, with no need to switch back and forth between Mira and your inbox.
+
+### Browser-extension sourcing returns the full number of candidates you asked for
+When sourcing candidates on hiring platforms with the browser extension, larger requests sometimes stopped early and returned fewer candidates than you asked for. This is now fixed: browser-extension sourcing reliably completes the request you set.
+
+### Special characters no longer freeze the page
+Fixed an issue where certain unrecognized special characters caused the page to go blank. When you type text containing angle-bracket tags or other special characters in the input box, Mira now treats them as plain text and handles them correctly, so input is more stable.
+
+### Agentic Search: autonomous source planning across data sources
+When searching for candidates, Mira can now plan its own retrieval path across multiple data sources and run the search autonomously. Paired with an Agent Team it handles complex searches better, and its parallel processing returns results faster.
+
+### Agent Team takes on complex tasks together
+An Agent Team is made up of several teammates that can collaborate and communicate on their own. Once you give an instruction, Mira assembles the team automatically; you can also shape a specific teammate's role and how independently it works, from fully automatic to review-before-send or step-by-step confirmation. It suits long-running deep research and complex hiring tasks. You can turn it on from the button in the channel input, and each teammate's role and progress appears in the channel conversation in real time.
+
+### Skills are live
+You can now save frequently used workflows as personal skills and invoke them by typing / in the channel input, instead of describing the same requirements from scratch each time. The official skill-creator is live too. It lets you create and edit personal skills through conversation.
+
+### Candidate search follows your requirements more strictly
+Before a search starts, Mira now drafts an ideal-candidate profile for you to review and adjust, and only begins searching once the direction is confirmed. Hard requirements you set, such as specific experience or target companies, are strictly enforced, so candidates who fail them no longer appear in results. All retrieved candidates are also evaluated in full, rather than being cut off early by a count limit.
+
+### File previews load faster and cover more file types
+Previously, previewing files such as PDFs and PowerPoint decks required the browser to download and render the entire file, which became slow with many files. Thumbnails are now pre-generated images, so the file panel opens noticeably faster. Code and configuration files now have previews, HTML files render as actual pages, and the selected state when multi-selecting files is clearer.
+
+### File previews always show the latest version
+Previously, after a file in a channel was updated, its preview could occasionally still show the older content. Opening a file now always shows the most recent version.
+
+## May 2026
+
+### Upload compressed archives as attachments
+You can now attach compressed archives such as zip, tar, gz, and rar directly to a channel. Mira unpacks them inside its sandbox and reads the contents automatically, so there's no need to extract and upload files one by one. Supplying material in bulk is more efficient.
+
+### Candidate match levels at a glance
+Candidate match analysis is now tiered, using color-coded labels to distinguish how well each candidate fits, so you can size up suitability at a glance.
+
+### Speak instead of typing
+You can now hold the microphone button in the channel input and just talk, and Mira transcribes your voice into text automatically. Describing the kind of candidate you're looking for is easier when you can say it out loud, and the context that comes out tends to be richer.
+
+### Scroll back through more channel history
+The channel history in the sidebar now loads incrementally as you scroll. Older channels appear automatically instead of being cut off at a fixed count, so finding something you ran earlier is much easier.
+
+### More complete candidate profiles
+The way candidate profile data is checked has been tightened, so the work history and education shown on the candidate page come out more complete than before.
+
+### Years-of-experience filter is more accurate
+The "years of experience" filter now counts a candidate's "career span", the total years from their first real job to today, instead of summing up overlapping periods. We also fixed a low-probability case where location filtering returned no results when it should have.
+
+### Your language choice now sticks across MiraDay
+Previously, moving between MiraDay's docs, blog, and the agent app sometimes meant picking your language again. Now once you set a preferred language anywhere, every other surface in MiraDay switches to it automatically the next time you visit.
+
+### Browser extension performance upgrade
+The extension connects to recruiting platforms more reliably, with far fewer disconnects and connection failures. The channel input page now clearly shows whether you're connected to the target site and which account is authorized, with a visible prompt when the browser can't connect. The extension can also auto-fill and submit search forms on recruiting platforms, so Mira can complete searches end-to-end on more sites.
+
+### Candidate info is easier to scan
+The candidate card layout has been refreshed so match analysis, skill sets, and working experience sit in more prominent positions, so you can size up whether a candidate fits at a glance.
+
+### Fewer agent interruptions
+We fixed several causes of tasks stopping partway through, such as network disconnects and tool-call failures, so far more tasks now run to completion.
+
+### PowerPoint files render more reliably
+The PowerPoint renderer has been reworked, fixing the occasional layout glitches in generated slides. The PowerPoint view also loads faster on first open.
+
+
+## April 2026
+
+### Talent data keeps expanding
+MiraDay's talent dataset keeps growing, covering more candidate information from public sources and more reachable contact methods.
+
+### Mira Browser Extension is live
+The Mira Browser Extension is now available on the Chrome Web Store. It uses your own logged-in browser session to search recruiting platforms and gather information, useful when you need to find candidates MiraDay's built-in search doesn't cover.
+
+### Share a channel with others
+Channels completed inside MiraDay can now be shared via a generated link. The recipient doesn't need a MiraDay account. They can open the link to see the full channel conversation, the generated candidate cards, and the AI task summary, making it more direct to hand off context.

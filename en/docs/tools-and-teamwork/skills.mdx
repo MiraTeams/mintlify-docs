@@ -1,0 +1,85 @@
+---
+title: Skills
+description: Save your recurring workflows as reusable Skills and invoke them with / in the channel input. Built-in recruiting Skills come from the Mira team; your own are yours to create, edit, and share.
+---
+
+Finding the right candidate is a win. Capturing how you did it makes it repeatable, and that's a Skill. Save the workflows you use again and again (a sourcing brief format, an evaluation rubric, a reporting structure) and reuse them in any channel instead of describing the same requirements from scratch each time.
+
+---
+
+## What are Skills
+
+A Skill is a set of saved instructions that tells Mira how to handle a recurring job: your intake questions, an evaluation rubric, a client-ready write-up format, even which tools to run and in what order. Mira runs the job end to end rather than treating it as a one-off prompt. Skills come in two kinds:
+
+- **Official Skills**: built and maintained by the Mira team, listed in the **Official** tab. More on these below.
+- **Personal Skills**: created by you, visible only to your account.
+
+Export a Skill and share the file so your whole team works the same way.
+
+## Official Skills
+
+Official Skills appear in the **Official** tab. You invoke them like any other Skill, or Mira applies one automatically when your request matches it (see [Invoke a Skill](#invoke-a-skill)).
+
+### skill-creator
+
+The one official Skill you'll reach for again and again is **skill-creator**: it builds and edits your own Skills through conversation, with no files to write.
+
+- **What it does:** describe a workflow in plain language, and skill-creator turns it into a Skill, drafting the instructions for you.
+- **How to use it:** in your Skills settings click **New Skill**, then **Create via Chat** (Mira opens a channel running skill-creator), or type **/skill-creator** in any channel. See [Create a Skill](#create-a-skill) for the full flow. To revise one of your Skills later, open it and click **Edit**.
+- **When to use it:** when you have a repeatable process (an intake checklist, an evaluation rubric, or a client-ready report format) and want it saved as a reusable Skill without editing a `SKILL.md` by hand.
+
+## Invoke a Skill
+
+1. Click the **Skills** button in the channel input toolbar, or type **/**. A skill picker appears with your available Skills; **View all skills** takes you to your Skills settings.
+2. Pick a Skill, or keep typing to filter by name.
+3. Describe the specifics of this run and send. The Skill name appears as a chip in your message, and Mira follows the Skill's instructions for the channel.
+
+![The skill picker open in the channel input after typing a slash, listing available Skills to choose from](/docs/skills-picker.png)
+
+Mira can also apply a relevant Skill automatically: every Skill carries a short description, and when your request matches it, Mira routes to that Skill on its own.
+
+## Create a Skill
+
+Open your Skills settings (**Settings**, then **Skills**) and click **New Skill**. There are two ways:
+
+![The New Skill menu in the Skills settings, offering Create via Chat and Import File](/docs/create-skill.png)
+
+**Create via Chat.** Mira opens a new channel with the official **skill-creator** Skill, which turns the workflow you describe into a Skill through conversation. When the draft is ready, Mira delivers it as a card in the conversation; preview it and click **Add to my skills** to save it.
+
+**Import File.** Drop in a `.md`, `.skill`, or `.zip` file (up to 10 MB). A single `.md` file must be named `SKILL.md`. Mira parses the `SKILL.md` frontmatter, adds the Skill, and opens its detail page showing the name, trigger, source, and files. A Skill package contains:
+
+- `SKILL.md`, required: frontmatter with the Skill ID (slug) and a short description (up to 1024 characters; Mira uses it to decide when to auto-apply the Skill), followed by the instructions in markdown (up to 100 KB).
+- Optional `scripts/`, `references/`, and `assets/` folders for supporting files.
+
+If the name matches an official Skill, rename it in the `SKILL.md` frontmatter and upload again. If it matches one of your own Skills, Mira asks whether to replace it; click **Replace and save** to overwrite.
+
+## The Skill detail page
+
+Open any Skill in your Skills settings to see its detail page: the description, its source, how it triggers (such as **Auto Routing**), and an on/off toggle. Your personal Skills also show their creation or last-edit time, how they were created (upload or chat), their version, and the Skill's files (tap a row for a read-only preview). For your personal Skills you can also:
+
+- **Edit**: hand the change to **skill-creator**. Settings close and Mira continues in the channel where the Skill was created, or opens a new channel if that one is gone or the Skill was imported from a file, and applies the change for you.
+- **Export .skill** (in the ⋯ menu): download the Skill as a `.skill` file.
+- **Delete** (in the ⋯ menu): remove it permanently. This removes `SKILL.md` and everything under `scripts/`, `references/`, and `assets/`, and can't be undone.
+
+## Manage your Skills
+
+Your Skills settings list everything in three tabs, **All**, **Official**, and **Personal**.
+
+![The Skills settings page listing Official and Personal Skills, each with an on/off toggle](/docs/skills-settings.png)
+
+**Enable or disable** any Skill with its toggle; disabled Skills aren't used. Editing, exporting, and deleting happen on the Skill's detail page.
+
+## FAQ
+
+### What official Skills are available?
+
+The **Official** tab lists the Skills the Mira team provides and has enabled for your account, including **skill-creator**, which helps you create and edit your own Skills through conversation. New official Skills appear there as the Mira team releases them.
+
+### Can I share a Skill with teammates?
+
+There's no built-in sharing yet. Export a Skill as a `.skill` file, and anyone can import it from their Skills settings via **New Skill** and **Import File**. This is how a personal Skill gets passed on and used across the whole team.
+
+## What's next
+
+- [How MiraDay Searches](/en/docs/sourcing/agentic-search): the search flow that Skills plug into.
+- [Voice & Audio Input](/en/docs/sourcing/voice-input): another fast way to describe what you need.

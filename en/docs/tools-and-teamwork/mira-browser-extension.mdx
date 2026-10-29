@@ -1,0 +1,74 @@
+---
+title: Mira Browser Extension
+description: Let Mira work in your Chrome browser, in a dedicated tab or an open page you explicitly choose, reaching sites beyond MiraDay's built-in sources.
+howTo:
+  name: Install and connect the Mira Browser Extension
+  totalTime: PT3M
+  steps:
+    - name: Install from the Chrome Web Store
+      text: "Find Mira Browser Extension on the Chrome Web Store and click Add to Chrome."
+    - name: Check the status button
+      text: "The channel input shows a small extension button (desktop only). If the extension isn't installed, clicking it opens install steps; if it's installed but not connected, clicking it offers Connect, Authorize, Update, or Upgrade; once connected, it works as a toggle."
+    - name: Authorize once
+      text: "The first time Mira needs your browser, it shows what you're authorizing. Click Authorize; it's remembered after that."
+    - name: Use it in a channel
+      text: "Ask in your channel and Mira browses in a dedicated tab by default. With extension version 0.4.18 or later, you can explicitly ask it to continue on a page you already have open."
+---
+
+The Mira Browser Extension lets Mira operate your own Chrome browser to reach information that isn't in its built-in sources, like sites that need a sign-in. It uses your own logins and works in a dedicated tab by default, or an open page you explicitly choose, so you can watch what it does and step in whenever you want.
+
+---
+
+## What you can use it for
+
+- **Browse a site you name.** Give Mira a specific website you want visited and it browses it for you, then brings back what it found.
+- **Reach candidates behind a sign-in.** Open a recruiting site you're logged into and Mira reads profiles, then brings qualified candidates back for matching.
+- **Research companies and teams.** Ask about a company's leadership, recent funding, or who's on a specific team, and Mira gathers it from the live web.
+- **Reach other SaaS tools you're signed into.** Mira works through your own browser session, so it can reach your ATS, CRM, or other accounts you're already logged into.
+
+## Install and connect
+
+1. Find **Mira Browser Extension** on the [Chrome Web Store](https://chromewebstore.google.com/detail/mira-chrome-extension/eehnmnpglnfhkkcepfdlnnolobnjfcoh) and click **Add to Chrome**. You can also install it from **Settings**, then **Browser Extension**, with the **Install extension** button (desktop only).
+2. A small extension icon appears in the channel input (desktop only; it doesn't show on mobile). While Mira is detecting the extension, the button is disabled. If the extension isn't installed, clicking it opens install steps; if it's installed but not connected, clicking it offers **Connect**, **Authorize**, **Update**, or **Upgrade**, depending on what's needed; once connected, it works as a toggle (see below).
+3. The first time Mira needs your browser, it shows a **Mira requests control of your browser** card. Mira uses sites you're logged into and operates in the channel's dedicated tab by default; you can also explicitly ask it to continue in an existing tab (see below). All actions are logged and viewable, and sensitive actions like payment or deletion ask you first. Click **Authorize**; it's remembered after that, so there's nothing to set up per channel.
+
+If the extension isn't ready when a channel needs it, Mira shows a card that walks you through installing, authorizing, or reconnecting, then picks the channel back up on its own once you're connected.
+
+If your extension is older than the version Mira requires, browsing is blocked until you update: Mira shows an **Update the Mira browser extension** card, marked **Update required**, with no option to skip. On more recent versions of the extension, click **Update now** and the update installs in one click, without leaving the page. Otherwise, or if the one-click update doesn't go through, update by hand:
+
+1. Go to `chrome://extensions/`, turn on **Developer mode** in the top right, then click **Update** in the top left.
+2. If it still won't update, find the Mira extension and click **Remove**, then use the **Open store** button on the card and click **Add to Chrome** to reinstall.
+
+Once you've updated, Mira picks the channel back up.
+
+## Using it in a channel
+
+![The extension working in a channel: the Browser connected status card, Mira's Navigate steps, and the extension button in the channel input](/docs/channel-browser.png)
+
+Just type what you need done in your channel. Mira decides on its own when browsing is the best way to get what you need, then works in a dedicated tab in your own browser. When the extension is connected, its button also works as an optional toggle for the current turn: leave it off and Mira decides, or turn it on to have Mira prefer the browser this time.
+
+With extension version **0.4.18 or later**, you can ask Mira to continue on a page you already have open. Mira uses that tab as the task's working tab, keeping its filters and page state; if it is unclear which page you mean, Mira asks in the conversation, without an additional authorization card or browser dialog.
+
+If Mira hits a step that needs you, like signing in with a username and password, a CAPTCHA, or a two-factor prompt, it **pauses and shows a Continue button** and waits. You can also take over the tab yourself at any point; Mira waits and resumes when you click **Continue**. You can open **View Browser Session** to watch it work, and sensitive actions, like a payment, a deletion, or sending something, always ask for your confirmation first.
+
+## Works with your team
+
+Teammates in an Agent Team can use the extension to browse too. You grant browser access once, up front, and the teammates Mira spins up for the channel can use the extension the same way, in your browser.
+
+## Platform compliance
+
+Many recruiting platforms have terms of service that restrict automated access. The Extension is built to work within reasonable usage patterns, but responsibility for complying with third-party platform terms rests with you. We recommend using it for targeted, specific searches rather than bulk scraping, and keeping your own platform accounts in good standing.
+
+## Privacy and security
+
+- Mira uses your own browser and logins in the channel's dedicated tab by default. If you explicitly choose an existing page, that tab becomes the task's working tab; unrelated tabs stay outside the task.
+- Mira doesn't store your passwords or cookies; it works through the session you're already signed into.
+- Sensitive actions ask for your confirmation first, and every action is logged and viewable.
+- The Extension works on Chrome only.
+- All data handling follows MiraDay's [Privacy Policy](/en/docs/match-quality-and-trust/privacy-policy).
+
+## What's next
+
+- [Agent Team](/en/docs/meet-mira/agent-teams): the teammates that share the browser during a channel.
+- [Connectors](/en/docs/tools-and-teamwork/connectors): connect Gmail or Outlook to work with email in a channel.
+- [How MiraDay Searches](/en/docs/sourcing/agentic-search): the built-in sources Mira searches before it reaches for the browser.
