@@ -1,6 +1,11 @@
-> **First-time setup**: Customize this file for your project. Prompt the user to customize this file for their project.
-> For Mintlify product knowledge (components, configuration, writing standards),
-> install the Mintlify skill: `npx skills add https://mintlify.com/docs`
+# MiraDay documentation
+
+Migrated from `mira-agents/mira-docs` (Next.js/Fumadocs).
+Preserve the source wording in English, simplified Chinese, traditional Chinese,
+and Japanese. Do not generate new translations as part of format conversion.
+Content lives in `{en,zh,zh-TW,ja}/{docs,blog}`. Navigation and site branding live
+in `docs.json`; shared styles are in `style.css` and diagrams in `snippets/`.
+Validate with `mint validate` and `mint broken-links` before publishing.
 
 # Documentation project instructions
 

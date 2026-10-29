@@ -1,0 +1,62 @@
+---
+title: How MiraDay Searches
+description: Describe the person you want in plain language. Mira searches across many talent sources and the open web, digs in step by step following the signals it surfaces, and returns candidates with the reason each one matches.
+---
+
+Agentic Search is how Mira finds people, and it works differently from LinkedIn Recruiter and traditional keyword search. Describe who you're looking for in plain language, and Mira works like a seasoned recruiter.
+
+---
+
+## What it solves
+
+Traditional candidate search has two built-in limits:
+
+- **One database.** The right people are scattered across professional networks, code communities, research platforms, and company sites. A single database is bound to miss some.
+- **One pass.** A single keyword match tends to return people with good-looking résumés, not people who are actually a good fit.
+
+Agentic Search is different on both counts: it pulls from **many sources** and advances in **multiple steps**, deciding where to look next from what the last step surfaced, until it finds the right people, including passive candidates who aren't actively looking for a job.
+
+## How it works
+
+![After a broad request, Mira asks for details with a clarification form: the purpose of the search and who you're looking for](/docs/How-works.png)
+
+1. **You describe the need**, in everyday language: the role, the must-haves, and the nice-to-haves.
+2. **A Sourcing Agent searches** across many talent sources and the open web, following signals (companies, tech stacks, projects, public work) and cross-checking them.
+3. **You get explainable results**: a candidate pool where every person comes with the reason they match.
+4. **You refine.** If the direction is off, just say so or add a constraint, and Mira adjusts.
+
+**Want a specific recruiting platform?** Name it. Say you want to search only that platform and Mira keeps the search there; mention it without "only" and Mira gives it priority. If a platform you asked for exclusively can't be reached, Mira asks before switching to another source instead of switching on its own. Platforms that need your sign-in are reached through the [Mira Browser Extension](/en/docs/tools-and-teamwork/mira-browser-extension).
+
+## Core capabilities
+
+- **Multi-source, multi-step**: matching records from public sources are merged and deduplicated, and each hop is cross-checked. Private contact records remain separate from public candidates, even when they refer to the same person. Powered by [MRE](/en/docs/match-quality-and-trust/understanding-ai-matching).
+- **Evidence-weighed matching**: Mira evaluates each candidate against your must-haves and dealbreakers and ranks them by the evidence, surfacing the non-obvious (like the strong engineer who never updated their job title). Every candidate carries the reason behind the match.
+- **On-demand contact**: once the right people are found, reveal email or phone as needed (each reveal uses credits).
+
+To include your own talent library, ask Mira to search your saved or imported [Contacts](/en/docs/tools-and-teamwork/contacts), alongside public sources if needed. Your private contact library is available only in channels you own.
+
+## Describe the role well
+
+Mira understands natural language, but more context gives it more to reason about. A weak prompt and a strong one return very different candidate pools:
+
+| Weak | Strong | Why it matters |
+|------|--------|----------------|
+| "Find me a developer" | "Senior backend engineer, 5+ years Python, has built microservices at scale, preferably from fintech" | More context means more signals to match against |
+| "Marketing person in NYC" | "B2B SaaS marketing manager in NYC, has run product launches, comfortable with data-driven campaigns" | Concrete signals (launches, data-driven campaigns) give Mira something to check against, not just a title and a city |
+| "We need someone good" | "Someone who's taken a product from 0 to 1, ideally at a Series A to B startup" | Mira reads "0 to 1" as early-stage building experience |
+
+You can also lean on the implicit criteria you'd say out loud. Mira reasons about what they mean rather than matching them as keywords:
+
+| You say | Mira reads it as |
+|---------|------------------|
+| "0 to 1" or "built from scratch" | early-stage company building, taking something from nothing to launch |
+| "startup DNA" or "scrappy" | operates independently, comfortable with ambiguity and little structure |
+| "high-growth background" | inferred from company size, funding history, and growth trajectory |
+| "5+ years of experience" | read from the real career timeline, not a profile tag |
+| "has built a team" | hired and led a team, not just worked on one |
+
+## What's next
+
+- [Must-haves & Dealbreakers](/en/docs/sourcing/search-filters-and-criteria): how Mira reads your requirements and builds the Ideal Candidate Profile.
+- [How MiraDay Matches Candidates](/en/docs/match-quality-and-trust/understanding-ai-matching): how MRE reasons to surface the right candidates.
+- [Agent Team](/en/docs/meet-mira/agent-teams): put a team on a complex search.

@@ -1,0 +1,69 @@
+---
+title: How MiraDay Matches Candidates
+description: Why Mira reasons about your requirements instead of matching keywords, how it scores each candidate against your criteria with evidence, and where the technology comes from.
+faqs:
+  - question: How does Mira's matching differ from keyword search?
+    answer: "Keyword search just matches strings in profile text. Mira Reasoning Embedding (MRE) reads your description, reasons about what you actually need, and surfaces candidates whose full career history fits your requirements, including implicit criteria that don't appear as keywords anywhere on a profile."
+  - question: How does Mira handle experience requirements like '5 years of backend'?
+    answer: "Mira works out years of experience from the dates in the candidate's job history instead of searching for the literal string '5 years', so the profile doesn't need to say '5 years' anywhere."
+  - question: Can Mira find candidates with '0 to 1' product experience?
+    answer: "Yes. Mira recognizes the pattern, someone who joined a company early and stayed through its growth phase, rather than searching for the literal phrase '0 to 1'."
+  - question: How does Mira understand 'high-growth company background'?
+    answer: "Mira reads through the candidate's work history and reasons about the company's stage and trajectory, then identifies those whose background fits the 'high-growth' pattern. Keyword search cannot do this at all."
+  - question: What can't Mira do?
+    answer: "Mira won't invent a candidate who isn't in the data sources, and it doesn't make the hiring decision. It surfaces the best available matches with the evidence, and the final call is always yours."
+  - question: How do I get better matching results?
+    answer: "Quality of matching depends on quality of input: be specific in your description, include implicit criteria like company background or career patterns to give Mira more to reason about, and refine after you see results; each round gets sharper."
+---
+
+On most platforms, searching for candidates means keyword matching: you type "Python developer Berlin" and get everyone with those words on their profile. It's fast, but it misses a lot, because the best candidate rarely describes themselves in your exact words.
+
+Mira works differently. Mira Reasoning Embedding (MRE), its reasoning-based retrieval model, reads your requirements, reasons about what you actually need, and surfaces the candidates whose real career history fits. Mira then scores each one against your criteria. The examples below show what that looks like in practice.
+
+---
+
+## What reasoning catches that keywords miss
+
+- **"5 years of backend experience."** Keyword search looks for "5 years" in the text. Mira works out years of experience from the dates in the candidate's work history, so the requirement is judged on the actual timeline, not on whether the profile happens to say "5 years."
+- **"Someone who's built a product from 0 to 1."** Keyword search looks for the literal phrase. Mira recognizes the pattern: joining a company early and staying through its growth.
+- **"High-growth company background."** Keyword search can't do this at all. Mira reads through the candidate's work history and reasons about the company's stage and trajectory.
+- **"Public company plus startup experience."** Keyword search treats these as two unrelated filters. Mira reads through the whole career arc and finds people who did both at different points, which signals a specific kind of versatility.
+
+## Describe roles the way you'd tell a colleague
+
+Because Mira reasons, you can describe a role in plain language:
+
+> *"I need someone senior, technical but customer-facing, who's done enterprise sales at a startup that actually had product-market fit, not one that just raised a lot of money."*
+
+Mira unpacks that into separate criteria and applies each one. No keyword combinations, filters, or search syntax.
+
+## How Mira scores each candidate
+
+![Candidates in the pool each carrying a colored fit label in the Qualifications column, ordered by fit](/docs/Candidates-appear.png)
+
+Mira doesn't hand back a black-box score. For each candidate, Mira goes through the must-have criteria in the Ideal Candidate Profile you confirmed, one at a time, and marks each one with a check (met), a dash (uncertain), or an X (not met), with a line of evidence pulled from that candidate's own history. If the profile is silent on something profiles often leave out, like team size or project scale, Mira marks it uncertain rather than guessing. If it's missing something a matching profile would normally list, like a required skill, title, or location, Mira counts that criterion as not met.
+
+From those per-criterion results, each candidate gets an overall label, **Good Match**, **Partial Match**, or **Low Match**, so you can scan the pool fast and still see the reasoning behind every call. A Good Match meets nearly all your criteria and fails none; a Low Match fails most of them; everything in between is a Partial Match. There are no numeric scores to decode.
+
+## Where the technology comes from
+
+MRE comes out of Mira's own research into reasoning-based retrieval. As of July 2026, it ranks first overall on BRIGHT, a public benchmark for reasoning retrieval, and first among embedding-based retrievers. Mira also built PJBenchmark, a recruiting-specific evaluation set built on real hiring data. Four papers describe the approach:
+
+- [Time-Scaling Is What Agents Need Now](https://arxiv.org/abs/2601.02714)
+- [Refine Thought](https://arxiv.org/abs/2511.13726)
+- [PJB](https://arxiv.org/abs/2603.17386)
+- [CRE-T1 Preview Technical Report](https://arxiv.org/abs/2603.17387)
+
+## What it doesn't do
+
+Mira won't invent a candidate who isn't there, and it doesn't make the hiring decision. It surfaces the best available matches with the evidence, and the final call is always yours. For the full picture of what to rely on Mira for and what stays with you, see [What MiraDay Can & Can't Do](/en/docs/match-quality-and-trust/what-mira-can-and-cant-do).
+
+## Getting better results
+
+The quality of matching depends on the quality of your input:
+
+- Be specific, and you get sharper matches.
+- Include implicit criteria, like company stage or career pattern, to give Mira more to reason about.
+- Refine after you see results; each round gets sharper.
+
+See [How MiraDay Searches](/en/docs/sourcing/agentic-search) for practical tips.
