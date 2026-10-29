@@ -28,7 +28,10 @@ body {
 }
 button, input, textarea, select { font-family: inherit; }
 pre, code { font-family: var(--mira-font-mono); }
-#sidebar { background-color: var(--mira-sidebar); }
+#sidebar { color: var(--mira-foreground); background-color: var(--mira-sidebar); border-color: var(--mira-border); }
+#sidebar a { color: var(--mira-muted); font-size: 14px; line-height: 20px; }
+#sidebar li[data-active] > a { color: var(--mira-foreground); }
+#navbar { border-color: var(--mira-border); }
 #sidebar h3, #page-title { color: var(--mira-foreground); }
 #page-title { font-size: 36px; font-weight: 700; line-height: 45px; }
 #content { color: var(--mira-foreground); font-size: 16px; line-height: 24px; }
@@ -38,9 +41,10 @@ pre, code { font-family: var(--mira-font-mono); }
 #content h3 { font-size: 18px; line-height: 24px; }
 #content h4 { font-size: 16px; line-height: 24px; }
 #content-area header { color: var(--mira-muted); }
+#content-area header p { color: var(--mira-muted); font-size: 16px; line-height: 24px; }
 .card { background-color: var(--mira-card); border-color: var(--mira-border); border-radius: 16px; }
 html.dark .card { background-color: var(--mira-card); border-color: var(--mira-border); }
-.card [data-component-part="card-title"] { color: var(--mira-foreground); font-weight: 600; }
+.card [data-component-part="card-title"] { color: var(--mira-foreground); font-size: 18px; line-height: 24px; font-weight: 600; }
 .card [data-component-part="card-content"] { color: var(--mira-muted); font-size: 16px; line-height: 24px; }
 .callout { color: var(--mira-foreground); background-color: var(--mira-card); border-color: var(--mira-border); border-radius: 10px; }
 #content img { border-radius: 8px; }
