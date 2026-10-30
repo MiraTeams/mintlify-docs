@@ -22,7 +22,8 @@
   },
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/logo/dark.svg",
+    "href": "https://miraday.ai"
   },
   "favicon": "/favicon.ico",
   "navigation": {
@@ -106,15 +107,6 @@
                 ]
               }
             ]
-          },
-          {
-            "tab": "MiraDay Blog",
-            "pages": [
-              "en/blog/index",
-              "en/blog/hiring-recognition-problem",
-              "en/blog/why-a-team-of-agents",
-              "en/blog/why-keyword-search-fails-in-recruiting"
-            ]
           }
         ]
       },
@@ -196,15 +188,6 @@
                   "zh/docs/help/changelog"
                 ]
               }
-            ]
-          },
-          {
-            "tab": "MiraDay 博客",
-            "pages": [
-              "zh/blog/index",
-              "zh/blog/hiring-recognition-problem",
-              "zh/blog/why-a-team-of-agents",
-              "zh/blog/why-keyword-search-fails-in-recruiting"
             ]
           }
         ]
@@ -288,15 +271,6 @@
                 ]
               }
             ]
-          },
-          {
-            "tab": "MiraDay 部落格",
-            "pages": [
-              "zh-TW/blog/index",
-              "zh-TW/blog/hiring-recognition-problem",
-              "zh-TW/blog/why-a-team-of-agents",
-              "zh-TW/blog/why-keyword-search-fails-in-recruiting"
-            ]
           }
         ]
       },
@@ -379,15 +353,6 @@
                 ]
               }
             ]
-          },
-          {
-            "tab": "MiraDay ブログ",
-            "pages": [
-              "ja/blog/index",
-              "ja/blog/hiring-recognition-problem",
-              "ja/blog/why-a-team-of-agents",
-              "ja/blog/why-keyword-search-fails-in-recruiting"
-            ]
           }
         ]
       }
@@ -427,32 +392,16 @@
       "destination": "/en/docs/index"
     },
     {
-      "source": "/en/blog",
-      "destination": "/en/blog/index"
-    },
-    {
       "source": "/zh/docs",
       "destination": "/zh/docs/index"
-    },
-    {
-      "source": "/zh/blog",
-      "destination": "/zh/blog/index"
     },
     {
       "source": "/zh-TW/docs",
       "destination": "/zh-TW/docs/index"
     },
     {
-      "source": "/zh-TW/blog",
-      "destination": "/zh-TW/blog/index"
-    },
-    {
       "source": "/ja/docs",
       "destination": "/ja/docs/index"
-    },
-    {
-      "source": "/ja/blog",
-      "destination": "/ja/blog/index"
     }
   ]
 }

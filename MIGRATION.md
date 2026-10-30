@@ -22,6 +22,22 @@ Target: https://github.com/mirateams/mintlify-docs.
 - The existing Next.js consent/analytics runtime and server API routes are
   not copied; migrating those requires a separate deployment integration.
 
+## Blog separation — 2026-10-30
+
+The current Mintlify site contains documentation only. The four blog tabs,
+16 localized blog MDX pages and blog cover assets were removed after backup.
+The logo links to https://miraday.ai. Documentation content and base styles
+remain unchanged.
+
+The complete state before removal is retained at commit
+`ad11928b0b996c97a27a904076e09d70c3580b4a` on branch
+[`backup/blog-before-wordpress-2026-10-30`](https://github.com/MiraTeams/mintlify-docs/tree/backup/blog-before-wordpress-2026-10-30).
+A separate ZIP backup contains the articles, original cover images, diagram
+components, old config, link inventory and checksums. WordPress import is a
+separate step; these MDX components are not a WordPress WXR import file.
+The migration script now imports documentation only so it cannot reintroduce
+the blog into this site.
+
 ## Validation
 
 Run with Node.js 24 LTS:
