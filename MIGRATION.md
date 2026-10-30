@@ -58,3 +58,19 @@ before merging.
 No changes to the Fumadocs source repository are needed. The starter site is
 preserved in this repository's Git history; revert the migration commit to
 restore it.
+
+## Usercentrics on Mintlify — 2026-10-30
+
+`usercentrics.js` loads Web CMP v3 with the original Settings ID
+`C1H8pFgAIf4I7k`, disables CMP interaction analytics, and adds a localized
+Cookie settings control after the document content. It follows
+`mintlify:navigate` and the official `__ucCmp` API for soft-navigation language
+updates and preference reopening. The original Next.js runtime is not copied.
+
+No GA, PostHog or Sentry SDK is added. Mintlify telemetry is explicitly disabled
+in docs.json (and in the migration generator), which also disables Mintlify
+page-feedback features. Custom JavaScript runs after interactivity and cannot
+serve as a pre-load blocker for independently enabled native integrations.
+Future analytics integrations need a separate consent-aware lifecycle and
+network verification. The Usercentrics configuration and registered domains
+remain managed in the Usercentrics dashboard.
