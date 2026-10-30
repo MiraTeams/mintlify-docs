@@ -3,7 +3,8 @@
 Migrated from `mira-agents/mira-docs` (Next.js/Fumadocs).
 Preserve the source wording in English, simplified Chinese, traditional Chinese,
 and Japanese. Do not generate new translations as part of format conversion.
-Content lives in `{en,zh,zh-TW,ja}/{docs,blog}`. Navigation and site branding live
+Documentation lives in `{en,zh,zh-TW,ja}/docs`. Blog content is managed separately
+in WordPress; do not restore blog pages or navigation here. Navigation and site branding live
 in `docs.json`; shared styles are in `style.css` and diagrams in `snippets/`.
 Validate with `mint validate` and `mint broken-links` before publishing.
 
