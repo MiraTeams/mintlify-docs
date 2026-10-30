@@ -403,5 +403,10 @@
       "source": "/ja/docs",
       "destination": "/ja/docs/index"
     }
-  ]
+  ],
+  "integrations": {
+    "telemetry": {
+      "enabled": false
+    }
+  }
 }

@@ -75,6 +75,7 @@ const config = {
   logo: { light: '/logo/light.svg', dark: '/logo/dark.svg', href: 'https://miraday.ai' }, favicon: '/favicon.ico',
   navigation: { languages: navigation },
   navbar: { primary: { type: 'button', label: 'Open MiraDay', href: 'https://app.miraday.ai' } },
+  integrations: { telemetry: { enabled: false } },
   contextual: { options: ['copy', 'view', 'chatgpt', 'claude', 'mcp'] },
   redirects: [{ source: '/', destination: '/en/docs/index' }, { source: '/index', destination: '/en/docs/index' }, { source: '/quickstart', destination: '/en/docs/get-started/quick-start' }, ...redirects]
 };
