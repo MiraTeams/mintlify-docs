@@ -3,7 +3,7 @@
   if (window.__miraDocsCmpLoaded) return;
   window.__miraDocsCmpLoaded = true;
 
-  const settingsId = 'C1H8pFgAIf4I7k';
+  const rulesetId = 'gS66QojQZQ_C0U';
   const copy = {
     en: ['en', 'Cookie settings', 'Opening…', 'Unable to open Cookie settings. Please retry or contact privacy@miraday.ai.'],
     zh: ['zh', 'Cookie 设置', '正在打开…', '暂时无法打开 Cookie 设置，请重试或联系 privacy@miraday.ai。'],
@@ -112,7 +112,7 @@
     const script = document.createElement('script');
     script.id = 'usercentrics-cmp';
     script.src = 'https://web.cmp.usercentrics.eu/ui/loader.js';
-    script.dataset.settingsId = settingsId;
+    script.dataset.rulesetId = rulesetId;
     script.dataset.language = locale()[0];
     script.dataset.disableTracking = 'true';
     script.async = true;
