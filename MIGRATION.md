@@ -61,8 +61,8 @@ restore it.
 
 ## Usercentrics on Mintlify — 2026-10-30
 
-`usercentrics.js` loads Web CMP v3 with the original Settings ID
-`C1H8pFgAIf4I7k`, disables CMP interaction analytics, and adds a localized
+`usercentrics.js` loads Web CMP v3 with the docs-specific Ruleset ID
+`gS66QojQZQ_C0U` (updated 2026-10-31), disables CMP interaction analytics, and adds a localized
 Cookie settings control after the document content. It follows
 `mintlify:navigate` and the official `__ucCmp` API for soft-navigation language
 updates and preference reopening. The original Next.js runtime is not copied.
@@ -74,3 +74,10 @@ serve as a pre-load blocker for independently enabled native integrations.
 Future analytics integrations need a separate consent-aware lifecycle and
 network verification. The Usercentrics configuration and registered domains
 remain managed in the Usercentrics dashboard.
+
+The docs Ruleset ID must be passed as `data-ruleset-id`, not
+`data-settings-id`. The supplied Usercentrics auto-blocking snippet additionally
+requires autoblocker.js ahead of the CMP and other third-party scripts in the
+HTML head. Mintlify's after-interactivity custom-script hook does not guarantee
+that ordering, so this integration does not enable or claim auto-blocking.
+Native telemetry remains disabled.
