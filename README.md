@@ -53,3 +53,30 @@ Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/sett
 
 ### Resources
 - [Mintlify documentation](https://mintlify.com/docs)
+
+### Consent-controlled analytics
+
+Google Analytics (`G-0F5EMJKSFL`) and PostHog (US region) use the public browser
+configuration verified in the deployed `docs.mira.day` bundle on 2026-11-03.
+`usercentrics.js` is generated; edit `scripts/telemetry.ts` and
+`scripts/cookie-controls.js`, then rebuild with:
+
+```sh
+bun scripts/build-telemetry.ts
+```
+
+The build requires the sibling `../mira-docs` checkout and its installed Bun
+dependencies. It bundles that project's consent lifecycle, request gate,
+revocation cleanup, URL filtering and masked session recording. Sentry is disabled
+in this integration. Keep analytics out of `docs.json` to avoid a second loader
+that bypasses the consent runtime.
+
+The current Usercentrics Ruleset and published regional Settings/service mapping
+are reused from `mira-docs/infrastructure/blog-telemetry/config.ts`. The early
+event and consent-persistence observers run before the CMP loader. Unknown or
+implicit consent does not authorize analytics. In the current US regional setting,
+clicking OK still leaves individual services IMPLICIT, so they remain blocked,
+matching the source policy. Pageviews follow Mintlify
+navigation events. The Cookie settings link follows Powered by Mintlify.
+
+The generated file is a local deliverable; rebuilding does not publish the site.
