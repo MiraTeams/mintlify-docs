@@ -80,3 +80,9 @@ matching the source policy. Pageviews follow Mintlify
 navigation events. The Cookie settings link follows Powered by Mintlify.
 
 The generated file is a local deliverable; rebuilding does not publish the site.
+
+The Mintlify build adds one necessary request rule in `scripts/docs-outbound.ts`:
+`POST https://leaves.mintlify.com/api/search/forward-ai-labs`. This is the native
+documentation search, so it works independently of analytics consent. Other
+tenants, endpoint paths, and HTTP methods remain blocked; the shared App/Blog
+network rules are unchanged. Verify with `bun test scripts/docs-outbound.test.ts`.
