@@ -89,9 +89,9 @@
   const schedule = () => { if (!scheduled) { scheduled = true; requestAnimationFrame(() => { scheduled = false; update(); }); } };
   const start = () => {
     update();
-    new MutationObserver(schedule).observe(document.getElementById('root') || document.body, { childList: true, subtree: true });
-    // Mintlify portals live outside #root.
-    new MutationObserver(schedule).observe(document.body, { childList: true });
+    // Native menus render asynchronously in portals outside #root.
+    // Observe child changes only; all text writes above are conditional.
+    new MutationObserver(schedule).observe(document.body, { childList: true, subtree: true });
     window.addEventListener('mintlify:navigate', schedule);
     window.addEventListener('popstate', schedule);
   };
