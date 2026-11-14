@@ -13,7 +13,7 @@ html.dark {
   --mira-border: rgba(255, 255, 255, 0.1);
   --mira-muted: #a3a3a3;
   --mira-foreground: #d4d4d4;
-  --mira-card: #323232;
+  --mira-card: #404040;
 }
 body { font-family: var(--mira-font-sans); }
 button, input, textarea, select { font-family: inherit; }
@@ -50,35 +50,3 @@ html.dark .stroke-fd-background { stroke: #262626; }
 @media (min-width: 769px) and (max-width: 1199px) {
   #navbar .nav-logo { width: 95px !important; height: 26px !important; }
 }
-
-/* Dark palette follows the signed-in App's shared design-system tokens.
-   Layout, native controls and light mode remain unchanged. */
-html.dark {
-  --mira-dark-background: #262626;
-  --mira-dark-sidebar: #1e1e1e;
-  --mira-dark-surface: #323232;
-  --mira-dark-hover: #404040;
-  --mira-dark-heading: #e5e5e5;
-  --mira-dark-text: #d4d4d4;
-  --mira-dark-muted: #a3a3a3;
-  --mira-dark-border: rgb(255 255 255 / 10%);
-  --gray-200: 229 229 229;
-  --gray-300: 212 212 212;
-  --gray-400: 163 163 163;
-  --gray-500: 115 115 115;
-}
-html.dark :is(#navbar, #sidebar, #content-container, #mobile-nav) { color: var(--mira-dark-text); }
-html.dark #navbar-transition { background-color: var(--mira-dark-background); border-color: var(--mira-dark-border); }
-html.dark #sidebar { background-color: var(--mira-dark-sidebar); }
-html.dark #mobile-nav { background-color: var(--mira-dark-sidebar); }
-html.dark .card { background-color: var(--mira-dark-surface); border-color: var(--mira-dark-border); }
-html.dark #sidebar .from-background-light { --tw-gradient-from: var(--mira-dark-sidebar); }
-html.dark #sidebar [data-active="true"] > a { background-color: #2d2d2d; color: var(--mira-dark-heading); }
-html.dark :is(#search-bar-entry, [role="menu"], [role="dialog"]:has(input)) { background-color: var(--mira-dark-surface); color: var(--mira-dark-text); }
-html.dark #search-bar-entry { filter: none; border-color: var(--mira-dark-border); }
-html.dark #search-bar-entry:hover { background-color: var(--mira-dark-hover); }
-html.dark :is(.prose, .mdx-content) { --tw-prose-body: var(--mira-dark-text); --tw-prose-headings: var(--mira-dark-heading); --tw-prose-links: var(--mira-dark-heading); color: var(--mira-dark-text); }
-html.dark #content-container :is(h1,h2,h3,h4,h5,h6) { color: var(--mira-dark-heading); }
-html.dark :is(#navbar, #sidebar, #content-container, #mobile-nav) [class~="dark:text-white"] { color: var(--mira-dark-heading); }
-html.dark :is(#navbar, #sidebar, #content-container, #mobile-nav) [class~="dark:text-white/50"] { color: var(--mira-dark-muted); }
-html.dark [role="menuitem"]:is(:hover,[data-highlighted]) { background-color: var(--mira-dark-hover); color: var(--mira-dark-heading); }
