@@ -8,7 +8,14 @@ const requireSource = createRequire(new URL('../../mira-docs/package.json', impo
 const build = await Bun.build({
   entrypoints: [new URL('./telemetry.ts', import.meta.url).pathname],
   target: 'browser', format: 'iife', minify: true,
-  plugins: [{ name: 'sentry-browser', setup(builder) {
+  plugins: [{ name: 'docs-outbound-rules', setup(builder) {
+    // Keep the extra search rule local to Mintlify; shared App/Blog rules are unchanged.
+    builder.onResolve({ filter: /^\.\/outbound$/ }, (args) => {
+      if (args.importer.endsWith('/lib/consent/outbound-gate.ts')) {
+        return { path: new URL('./docs-outbound.ts', import.meta.url).pathname };
+      }
+    });
+  } }, { name: 'sentry-browser', setup(builder) {
     builder.onResolve({ filter: /^@sentry\/nextjs$/ }, () => ({ path: requireSource.resolve('@sentry/browser') }));
   } }],
   define: { 'process.env': JSON.stringify({ NODE_ENV: 'production' }) },
