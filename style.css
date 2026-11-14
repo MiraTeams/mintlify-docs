@@ -13,7 +13,7 @@ html.dark {
   --mira-border: rgba(255, 255, 255, 0.1);
   --mira-muted: #a3a3a3;
   --mira-foreground: #d4d4d4;
-  --mira-card: #404040;
+  --mira-card: #323232;
 }
 body { font-family: var(--mira-font-sans); }
 button, input, textarea, select { font-family: inherit; }
@@ -50,76 +50,35 @@ html.dark .stroke-fd-background { stroke: #262626; }
 @media (min-width: 769px) and (max-width: 1199px) {
   #navbar .nav-logo { width: 95px !important; height: 26px !important; }
 }
-/* Docs shell follows the website Header; document typography is unchanged. */
-@font-face {font-family:"Mira Header Inter";src:url("https://framerusercontent.com/assets/UjlFhCnUjxhNfep4oYBPqnEssyo.woff2") format("woff2");font-weight:500;font-display:swap;}
-@font-face {font-family:"Mira Header Geologica";src:url("https://fonts.gstatic.com/s/geologica/v5/oY1o8evIr7j9P3TN9YwNAdyjzUyDKkKdAGOJh1UlCDUIhAIdhCZOn1fLsig7jfvCCPHZckU8H3G11_z-_OZqDy3rQ-YYAXWnqFs.woff2") format("woff2");font-weight:500;font-display:swap;}
-:root {--mintlify-slot-header-height:64px;--topbar-tabs-height:0px;--mira-shell-bg:#fafafa;--mira-shell-text:#18181b;--mira-shell-muted:#71717a;--mira-shell-border:#e4e4e7;--mira-shell-hover:#f4f4f5;--mira-shell-button:#18181b;--mira-shell-button-text:#fafafa;}
-html.dark {--mira-shell-bg:#262626;--mira-shell-text:#d4d4d4;--mira-shell-muted:#a3a3a3;--mira-shell-border:#ffffff1a;--mira-shell-hover:#404040;--mira-shell-button:#e4e4e7;--mira-shell-button-text:#18181b;}
-#navbar {height:var(--mintlify-slot-header-height);font-family:"Mira Header Inter",Inter,system-ui,sans-serif;font-weight:500;color:var(--mira-shell-text);background:var(--mira-shell-bg);border-bottom:1px solid var(--mira-shell-border);}
-#navbar-transition {background:var(--mira-shell-bg)!important;border:0!important;}
-#navbar > .max-w-8xl {max-width:1328px;}
-#navbar .mira-shell-row {height:64px;margin:0;padding:0 24px;}
-#navbar .mira-shell-inner {border:0;gap:0;}
-#navbar .mira-shell-logo,#navbar .mira-shell-actions,#navbar nav,#navbar nav>ul {display:contents;}
-#navbar .mira-shell-logo>a {flex:none;order:0;}
-#navbar .mira-shell-search {display:flex;order:3;flex:1;min-width:160px;max-width:360px;margin:0 40px 0 auto;}
-#navbar #search-bar-entry {border-radius:8px;height:36px;box-shadow:none;border:1px solid var(--mira-shell-border);background:transparent;color:var(--mira-shell-muted);font:500 14px/20px "Mira Header Inter",Inter,sans-serif;}
-#navbar .mira-shell-docs {order:1;margin-left:77px;margin-right:32px;}
-#navbar .mira-shell-blog {order:2;margin-right:48px;}
-#navbar .mira-shell-login {order:5;margin-right:12px;}
-#navbar nav li {list-style:none;}
-#navbar nav a {color:var(--mira-shell-muted);font:500 14px/20px "Mira Header Inter",Inter,sans-serif;white-space:nowrap;transition:color 180ms ease,background 180ms ease;}
-#navbar nav a:hover {color:var(--mira-shell-text);}
-#navbar .mira-shell-login>a {display:flex;align-items:center;height:36px;padding:8px 16px;box-sizing:border-box;border-radius:8px;color:var(--mira-shell-text);}
-#navbar .mira-shell-login>a:hover {background:var(--mira-shell-hover);}
-#navbar #topbar-cta-button {order:6;display:flex;}
-#navbar #topbar-cta-button>a {height:40px;padding:10px 16px;box-sizing:border-box;border-radius:10px;background:var(--mira-shell-button);color:var(--mira-shell-button-text);}
-#navbar #topbar-cta-button>a>span {display:none;}
-#navbar #topbar-cta-button>a div,#navbar #topbar-cta-button>a div>span {color:inherit;}
-#navbar #topbar-cta-button svg {display:none;}
-#navbar nav li.mira-shell-duplicate {display:none;}
-#navbar .mira-shell-theme {order:4;margin-right:12px;}
-#navbar #theme-preference-menu-trigger {width:32px;height:32px;color:var(--mira-shell-muted);}
-#navbar #localization-select-trigger {position:fixed;top:88px;left:max(48px,calc((100vw - 1376px)/2 + 16px));width:224px;height:38px;display:flex;justify-content:space-between;border:1px solid var(--mira-shell-border);border-radius:8px;padding:0 12px;background:var(--mira-shell-bg);color:var(--mira-shell-muted);font:500 14px/20px "Mira Header Inter",Inter,sans-serif;}
-#navbar .mira-shell-locale {display:contents;}
-#sidebar #navigation-items {padding-top:68px;}
-#navbar .nav-tabs,#navbar .mira-shell-navigation {display:none;}
-#navbar a:focus-visible,#navbar button:focus-visible,.mira-mobile-links a:focus-visible {outline:2px solid #a1a1aa;outline-offset:3px;}
-@media(min-width:1200px){#navbar .mira-shell-mobile{display:none;}}
-@media(max-width:1199px){
- :root {--mintlify-slot-header-height:55px;}
- #navbar {position:fixed;}
- #navbar .mira-shell-row {height:55px;padding:0 20px;}
- #navbar .mira-shell-inner {display:flex;}
- #navbar .mira-shell-logo {display:flex;flex:1;}
- #navbar .mira-shell-search,#navbar .mira-shell-actions,#navbar .mira-shell-locale,#navbar nav {display:none;}
- #navbar .mira-shell-mobile {display:flex;align-items:center;gap:14px;margin-left:auto;margin-right:46px;}
- #navbar .mira-shell-mobile>.mira-shell-more {display:none;}
- #navbar .mira-shell-navigation {display:flex;position:absolute;top:14.5px;right:20px;width:32px;height:26px;padding:0;align-items:center;justify-content:center;}
- #navbar .mira-shell-navigation>div:not(:first-child),#navbar .mira-shell-navigation .sr-only {display:none;}
- #navbar .mira-shell-navigation svg {width:18px;height:18px;color:var(--mira-shell-text);}
- #sidebar {display:none!important;}
- #content-container > .flex {padding-top:calc(var(--mintlify-slot-header-height) + 40px + var(--banner-height,0px));}
- #mobile-nav {--bleed:0px!important;width:100vw!important;min-width:0!important;max-width:none!important;margin:55px 0 0!important;height:calc(100dvh - 55px)!important;background:var(--mira-shell-bg);transform:none!important;transition:opacity 220ms cubic-bezier(.22,1,.36,1)!important;}
- #mobile-nav[data-starting-style],#mobile-nav[data-ending-style]{opacity:0;}
- #mobile-nav [data-component-part="scroll-area-viewport"] {padding:24px 20px 40px!important;}
- #mobile-nav>button {position:fixed;top:-40.5px;left:auto;right:20px;margin:0;width:32px;height:26px;border-radius:6px;opacity:1;pointer-events:auto;background:var(--mira-shell-bg);color:var(--mira-shell-text);}
- #mobile-nav [data-component-part="scroll-area-content"] {min-width:0!important;}
- #mobile-nav [data-switch="pill"] {margin:0 0 20px auto;background:var(--mira-shell-hover);border:0;border-radius:8px;height:32px;padding:4px;width:104px;}
- #mobile-nav [data-switch="pill"] button {height:24px;width:30px;border-radius:6px;}
- #mobile-nav [data-switch="pill"]>div {border-radius:6px;}
- #mobile-nav .mira-shell-drawer-heading>a {display:none;}
- #mobile-nav .mira-shell-drawer-heading {margin:0;}
- #mobile-nav #localization-select-trigger {height:40px;font-size:14px;border-radius:8px;color:var(--mira-shell-muted);border-color:var(--mira-shell-border);}
- #mobile-nav .mira-mobile-links {display:grid;gap:16px;margin:0 0 24px;}
- #mobile-nav .mira-mobile-links>a {font:500 24px/40px "Mira Header Geologica",system-ui,sans-serif;color:var(--mira-shell-text);border-bottom:1px solid var(--mira-shell-border);padding-bottom:8px;text-decoration:none;}
- #mobile-nav .mira-mobile-cta {display:grid;gap:12px;margin:24px 0;}
- #mobile-nav .mira-mobile-cta>a {display:flex;align-items:center;justify-content:center;min-height:48px;border:1px solid var(--mira-shell-border);border-radius:12px;font:500 14px/20px "Mira Header Inter",Inter,sans-serif;color:var(--mira-shell-text);text-decoration:none;}
- #mobile-nav .mira-mobile-cta>a:first-child {background:var(--mira-shell-button);color:var(--mira-shell-button-text);border:0;font-size:16px;}
+
+/* Dark palette follows the signed-in App's shared design-system tokens.
+   Layout, native controls and light mode remain unchanged. */
+html.dark {
+  --mira-dark-background: #262626;
+  --mira-dark-sidebar: #1e1e1e;
+  --mira-dark-surface: #323232;
+  --mira-dark-hover: #404040;
+  --mira-dark-heading: #e5e5e5;
+  --mira-dark-text: #d4d4d4;
+  --mira-dark-muted: #a3a3a3;
+  --mira-dark-border: rgb(255 255 255 / 10%);
+  --gray-200: 229 229 229;
+  --gray-300: 212 212 212;
+  --gray-400: 163 163 163;
+  --gray-500: 115 115 115;
 }
-@media(prefers-reduced-motion:reduce){#navbar *,#mobile-nav {transition:none!important;animation:none!important;}}
-/* Keep the persistent Header undimmed when the menu opens below it. */
-@media(max-width:1199px){
- [data-base-ui-portal]:has(#mobile-nav)>[role="presentation"] {display:flex!important;}
- [data-base-ui-portal]:has(#mobile-nav)>[aria-hidden="true"] {top:55px!important;background:transparent!important;pointer-events:none;}
-}
+html.dark :is(#navbar, #sidebar, #content-container, #mobile-nav) { color: var(--mira-dark-text); }
+html.dark #navbar-transition { background-color: var(--mira-dark-background); border-color: var(--mira-dark-border); }
+html.dark #sidebar { background-color: var(--mira-dark-sidebar); }
+html.dark #mobile-nav { background-color: var(--mira-dark-sidebar); }
+html.dark .card { background-color: var(--mira-dark-surface); border-color: var(--mira-dark-border); }
+html.dark #sidebar .from-background-light { --tw-gradient-from: var(--mira-dark-sidebar); }
+html.dark #sidebar [data-active="true"] > a { background-color: #2d2d2d; color: var(--mira-dark-heading); }
+html.dark :is(#search-bar-entry, [role="menu"], [role="dialog"]:has(input)) { background-color: var(--mira-dark-surface); color: var(--mira-dark-text); }
+html.dark #search-bar-entry { filter: none; border-color: var(--mira-dark-border); }
+html.dark #search-bar-entry:hover { background-color: var(--mira-dark-hover); }
+html.dark :is(.prose, .mdx-content) { --tw-prose-body: var(--mira-dark-text); --tw-prose-headings: var(--mira-dark-heading); --tw-prose-links: var(--mira-dark-heading); color: var(--mira-dark-text); }
+html.dark #content-container :is(h1,h2,h3,h4,h5,h6) { color: var(--mira-dark-heading); }
+html.dark :is(#navbar, #sidebar, #content-container, #mobile-nav) [class~="dark:text-white"] { color: var(--mira-dark-heading); }
+html.dark :is(#navbar, #sidebar, #content-container, #mobile-nav) [class~="dark:text-white/50"] { color: var(--mira-dark-muted); }
+html.dark [role="menuitem"]:is(:hover,[data-highlighted]) { background-color: var(--mira-dark-hover); color: var(--mira-dark-heading); }
