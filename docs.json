@@ -10,7 +10,7 @@
   },
   "background": {
     "color": {
-      "light": "#FAFAFA",
+      "light": "#FFFFFF",
       "dark": "#262626"
     }
   },
@@ -23,424 +23,346 @@
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg",
-    "href": "https://www.miraday.ai/"
+    "href": "https://miraday.ai"
   },
   "favicon": "/favicon.ico",
   "navigation": {
     "languages": [
       {
         "language": "en",
-        "groups": [
+        "tabs": [
           {
-            "group": "MiraDay Documentation",
-            "pages": [
-              "en/docs/index"
-            ]
-          },
-          {
-            "group": "Meet MiraDay",
-            "pages": [
-              "en/docs/meet-mira/what-is-mira",
-              "en/docs/meet-mira/why-mira",
-              "en/docs/meet-mira/how-mira-works",
-              "en/docs/meet-mira/agent-teams",
-              "en/docs/meet-mira/key-concepts"
-            ]
-          },
-          {
-            "group": "Get Started",
-            "pages": [
-              "en/docs/get-started/create-your-account",
-              "en/docs/get-started/quick-start",
-              "en/docs/get-started/review-your-candidates",
-              "en/docs/get-started/export-and-share"
-            ]
-          },
-          {
-            "group": "Sourcing",
-            "pages": [
-              "en/docs/sourcing/agentic-search",
-              "en/docs/sourcing/search-filters-and-criteria",
-              "en/docs/sourcing/voice-input",
-              "en/docs/sourcing/candidate-profile",
-              "en/docs/sourcing/refine-and-export",
-              "en/docs/sourcing/tips-and-best-practices"
-            ]
-          },
-          {
-            "group": "Tools & Integrations",
-            "pages": [
-              "en/docs/tools-and-teamwork/skills",
-              "en/docs/tools-and-teamwork/files",
-              "en/docs/tools-and-teamwork/contacts",
-              "en/docs/tools-and-teamwork/connectors",
-              "en/docs/tools-and-teamwork/mira-browser-extension"
-            ]
-          },
-          {
-            "group": "Match Quality & Trust",
-            "pages": [
-              "en/docs/match-quality-and-trust/understanding-ai-matching",
-              "en/docs/match-quality-and-trust/where-candidates-come-from",
-              "en/docs/match-quality-and-trust/what-mira-can-and-cant-do",
-              "en/docs/match-quality-and-trust/privacy-policy"
-            ]
-          },
-          {
-            "group": "Account & Settings",
-            "pages": [
-              "en/docs/account/sign-in-and-account",
-              "en/docs/account/languages",
-              "en/docs/account/credits"
-            ]
-          },
-          {
-            "group": "Help & FAQ",
-            "pages": [
-              "en/docs/help/general-faq",
-              "en/docs/help/sourcing-faq",
-              "en/docs/help/troubleshooting",
-              "en/docs/help/changelog"
+            "tab": "Documentation",
+            "groups": [
+              {
+                "group": "MiraDay Documentation",
+                "pages": [
+                  "en/docs/index"
+                ]
+              },
+              {
+                "group": "Meet MiraDay",
+                "pages": [
+                  "en/docs/meet-mira/what-is-mira",
+                  "en/docs/meet-mira/why-mira",
+                  "en/docs/meet-mira/how-mira-works",
+                  "en/docs/meet-mira/agent-teams",
+                  "en/docs/meet-mira/key-concepts"
+                ]
+              },
+              {
+                "group": "Get Started",
+                "pages": [
+                  "en/docs/get-started/create-your-account",
+                  "en/docs/get-started/quick-start",
+                  "en/docs/get-started/review-your-candidates",
+                  "en/docs/get-started/export-and-share"
+                ]
+              },
+              {
+                "group": "Sourcing",
+                "pages": [
+                  "en/docs/sourcing/agentic-search",
+                  "en/docs/sourcing/search-filters-and-criteria",
+                  "en/docs/sourcing/voice-input",
+                  "en/docs/sourcing/candidate-profile",
+                  "en/docs/sourcing/refine-and-export",
+                  "en/docs/sourcing/tips-and-best-practices"
+                ]
+              },
+              {
+                "group": "Tools & Integrations",
+                "pages": [
+                  "en/docs/tools-and-teamwork/skills",
+                  "en/docs/tools-and-teamwork/files",
+                  "en/docs/tools-and-teamwork/contacts",
+                  "en/docs/tools-and-teamwork/connectors",
+                  "en/docs/tools-and-teamwork/mira-browser-extension"
+                ]
+              },
+              {
+                "group": "Match Quality & Trust",
+                "pages": [
+                  "en/docs/match-quality-and-trust/understanding-ai-matching",
+                  "en/docs/match-quality-and-trust/where-candidates-come-from",
+                  "en/docs/match-quality-and-trust/what-mira-can-and-cant-do",
+                  "en/docs/match-quality-and-trust/privacy-policy"
+                ]
+              },
+              {
+                "group": "Account & Settings",
+                "pages": [
+                  "en/docs/account/sign-in-and-account",
+                  "en/docs/account/languages",
+                  "en/docs/account/credits"
+                ]
+              },
+              {
+                "group": "Help & FAQ",
+                "pages": [
+                  "en/docs/help/general-faq",
+                  "en/docs/help/sourcing-faq",
+                  "en/docs/help/troubleshooting",
+                  "en/docs/help/changelog"
+                ]
+              }
             ]
           }
-        ],
-        "navbar": {
-          "links": [
-            {
-              "label": "Docs",
-              "href": "/en/docs/index"
-            },
-            {
-              "label": "Blog",
-              "href": "https://blog.miraday.ai/"
-            },
-            {
-              "label": "Log In",
-              "href": "https://www.miraday.ai/sign-in?lang=en"
-            }
-          ],
-          "primary": {
-            "type": "button",
-            "label": "Start for free",
-            "href": "https://www.miraday.ai/sign-up?lang=en"
-          }
-        }
+        ]
       },
       {
         "language": "zh",
-        "groups": [
+        "tabs": [
           {
-            "group": "MiraDay 文档",
-            "pages": [
-              "zh/docs/index"
-            ]
-          },
-          {
-            "group": "认识 MiraDay",
-            "pages": [
-              "zh/docs/meet-mira/what-is-mira",
-              "zh/docs/meet-mira/why-mira",
-              "zh/docs/meet-mira/how-mira-works",
-              "zh/docs/meet-mira/agent-teams",
-              "zh/docs/meet-mira/key-concepts"
-            ]
-          },
-          {
-            "group": "快速上手",
-            "pages": [
-              "zh/docs/get-started/create-your-account",
-              "zh/docs/get-started/quick-start",
-              "zh/docs/get-started/review-your-candidates",
-              "zh/docs/get-started/export-and-share"
-            ]
-          },
-          {
-            "group": "人才寻访",
-            "pages": [
-              "zh/docs/sourcing/agentic-search",
-              "zh/docs/sourcing/search-filters-and-criteria",
-              "zh/docs/sourcing/voice-input",
-              "zh/docs/sourcing/candidate-profile",
-              "zh/docs/sourcing/refine-and-export",
-              "zh/docs/sourcing/tips-and-best-practices"
-            ]
-          },
-          {
-            "group": "工具与集成",
-            "pages": [
-              "zh/docs/tools-and-teamwork/skills",
-              "zh/docs/tools-and-teamwork/files",
-              "zh/docs/tools-and-teamwork/contacts",
-              "zh/docs/tools-and-teamwork/connectors",
-              "zh/docs/tools-and-teamwork/mira-browser-extension"
-            ]
-          },
-          {
-            "group": "匹配质量与信任",
-            "pages": [
-              "zh/docs/match-quality-and-trust/understanding-ai-matching",
-              "zh/docs/match-quality-and-trust/where-candidates-come-from",
-              "zh/docs/match-quality-and-trust/what-mira-can-and-cant-do",
-              "zh/docs/match-quality-and-trust/privacy-policy"
-            ]
-          },
-          {
-            "group": "账户与设置",
-            "pages": [
-              "zh/docs/account/sign-in-and-account",
-              "zh/docs/account/languages",
-              "zh/docs/account/credits"
-            ]
-          },
-          {
-            "group": "帮助与常见问题",
-            "pages": [
-              "zh/docs/help/general-faq",
-              "zh/docs/help/sourcing-faq",
-              "zh/docs/help/troubleshooting",
-              "zh/docs/help/changelog"
+            "tab": "文档",
+            "groups": [
+              {
+                "group": "MiraDay 文档",
+                "pages": [
+                  "zh/docs/index"
+                ]
+              },
+              {
+                "group": "认识 MiraDay",
+                "pages": [
+                  "zh/docs/meet-mira/what-is-mira",
+                  "zh/docs/meet-mira/why-mira",
+                  "zh/docs/meet-mira/how-mira-works",
+                  "zh/docs/meet-mira/agent-teams",
+                  "zh/docs/meet-mira/key-concepts"
+                ]
+              },
+              {
+                "group": "快速上手",
+                "pages": [
+                  "zh/docs/get-started/create-your-account",
+                  "zh/docs/get-started/quick-start",
+                  "zh/docs/get-started/review-your-candidates",
+                  "zh/docs/get-started/export-and-share"
+                ]
+              },
+              {
+                "group": "人才寻访",
+                "pages": [
+                  "zh/docs/sourcing/agentic-search",
+                  "zh/docs/sourcing/search-filters-and-criteria",
+                  "zh/docs/sourcing/voice-input",
+                  "zh/docs/sourcing/candidate-profile",
+                  "zh/docs/sourcing/refine-and-export",
+                  "zh/docs/sourcing/tips-and-best-practices"
+                ]
+              },
+              {
+                "group": "工具与集成",
+                "pages": [
+                  "zh/docs/tools-and-teamwork/skills",
+                  "zh/docs/tools-and-teamwork/files",
+                  "zh/docs/tools-and-teamwork/contacts",
+                  "zh/docs/tools-and-teamwork/connectors",
+                  "zh/docs/tools-and-teamwork/mira-browser-extension"
+                ]
+              },
+              {
+                "group": "匹配质量与信任",
+                "pages": [
+                  "zh/docs/match-quality-and-trust/understanding-ai-matching",
+                  "zh/docs/match-quality-and-trust/where-candidates-come-from",
+                  "zh/docs/match-quality-and-trust/what-mira-can-and-cant-do",
+                  "zh/docs/match-quality-and-trust/privacy-policy"
+                ]
+              },
+              {
+                "group": "账户与设置",
+                "pages": [
+                  "zh/docs/account/sign-in-and-account",
+                  "zh/docs/account/languages",
+                  "zh/docs/account/credits"
+                ]
+              },
+              {
+                "group": "帮助与常见问题",
+                "pages": [
+                  "zh/docs/help/general-faq",
+                  "zh/docs/help/sourcing-faq",
+                  "zh/docs/help/troubleshooting",
+                  "zh/docs/help/changelog"
+                ]
+              }
             ]
           }
-        ],
-        "navbar": {
-          "links": [
-            {
-              "label": "文档",
-              "href": "/zh/docs/index"
-            },
-            {
-              "label": "博客",
-              "href": "https://blog.miraday.ai/"
-            },
-            {
-              "label": "登录",
-              "href": "https://www.miraday.ai/sign-in?lang=zh"
-            }
-          ],
-          "primary": {
-            "type": "button",
-            "label": "免费开始",
-            "href": "https://www.miraday.ai/sign-up?lang=zh"
-          }
-        }
+        ]
       },
       {
         "language": "zh-TW",
-        "groups": [
+        "tabs": [
           {
-            "group": "MiraDay 文件",
-            "pages": [
-              "zh-TW/docs/index"
-            ]
-          },
-          {
-            "group": "認識 MiraDay",
-            "pages": [
-              "zh-TW/docs/meet-mira/what-is-mira",
-              "zh-TW/docs/meet-mira/why-mira",
-              "zh-TW/docs/meet-mira/how-mira-works",
-              "zh-TW/docs/meet-mira/agent-teams",
-              "zh-TW/docs/meet-mira/key-concepts"
-            ]
-          },
-          {
-            "group": "快速上手",
-            "pages": [
-              "zh-TW/docs/get-started/create-your-account",
-              "zh-TW/docs/get-started/quick-start",
-              "zh-TW/docs/get-started/review-your-candidates",
-              "zh-TW/docs/get-started/export-and-share"
-            ]
-          },
-          {
-            "group": "人才尋訪",
-            "pages": [
-              "zh-TW/docs/sourcing/agentic-search",
-              "zh-TW/docs/sourcing/search-filters-and-criteria",
-              "zh-TW/docs/sourcing/voice-input",
-              "zh-TW/docs/sourcing/candidate-profile",
-              "zh-TW/docs/sourcing/refine-and-export",
-              "zh-TW/docs/sourcing/tips-and-best-practices"
-            ]
-          },
-          {
-            "group": "工具與整合",
-            "pages": [
-              "zh-TW/docs/tools-and-teamwork/skills",
-              "zh-TW/docs/tools-and-teamwork/files",
-              "zh-TW/docs/tools-and-teamwork/contacts",
-              "zh-TW/docs/tools-and-teamwork/connectors",
-              "zh-TW/docs/tools-and-teamwork/mira-browser-extension"
-            ]
-          },
-          {
-            "group": "匹配品質與信任",
-            "pages": [
-              "zh-TW/docs/match-quality-and-trust/understanding-ai-matching",
-              "zh-TW/docs/match-quality-and-trust/where-candidates-come-from",
-              "zh-TW/docs/match-quality-and-trust/what-mira-can-and-cant-do",
-              "zh-TW/docs/match-quality-and-trust/privacy-policy"
-            ]
-          },
-          {
-            "group": "帳戶與設定",
-            "pages": [
-              "zh-TW/docs/account/sign-in-and-account",
-              "zh-TW/docs/account/languages",
-              "zh-TW/docs/account/credits"
-            ]
-          },
-          {
-            "group": "說明與常見問題",
-            "pages": [
-              "zh-TW/docs/help/general-faq",
-              "zh-TW/docs/help/sourcing-faq",
-              "zh-TW/docs/help/troubleshooting",
-              "zh-TW/docs/help/changelog"
+            "tab": "文件",
+            "groups": [
+              {
+                "group": "MiraDay 文件",
+                "pages": [
+                  "zh-TW/docs/index"
+                ]
+              },
+              {
+                "group": "認識 MiraDay",
+                "pages": [
+                  "zh-TW/docs/meet-mira/what-is-mira",
+                  "zh-TW/docs/meet-mira/why-mira",
+                  "zh-TW/docs/meet-mira/how-mira-works",
+                  "zh-TW/docs/meet-mira/agent-teams",
+                  "zh-TW/docs/meet-mira/key-concepts"
+                ]
+              },
+              {
+                "group": "快速上手",
+                "pages": [
+                  "zh-TW/docs/get-started/create-your-account",
+                  "zh-TW/docs/get-started/quick-start",
+                  "zh-TW/docs/get-started/review-your-candidates",
+                  "zh-TW/docs/get-started/export-and-share"
+                ]
+              },
+              {
+                "group": "人才尋訪",
+                "pages": [
+                  "zh-TW/docs/sourcing/agentic-search",
+                  "zh-TW/docs/sourcing/search-filters-and-criteria",
+                  "zh-TW/docs/sourcing/voice-input",
+                  "zh-TW/docs/sourcing/candidate-profile",
+                  "zh-TW/docs/sourcing/refine-and-export",
+                  "zh-TW/docs/sourcing/tips-and-best-practices"
+                ]
+              },
+              {
+                "group": "工具與整合",
+                "pages": [
+                  "zh-TW/docs/tools-and-teamwork/skills",
+                  "zh-TW/docs/tools-and-teamwork/files",
+                  "zh-TW/docs/tools-and-teamwork/contacts",
+                  "zh-TW/docs/tools-and-teamwork/connectors",
+                  "zh-TW/docs/tools-and-teamwork/mira-browser-extension"
+                ]
+              },
+              {
+                "group": "匹配品質與信任",
+                "pages": [
+                  "zh-TW/docs/match-quality-and-trust/understanding-ai-matching",
+                  "zh-TW/docs/match-quality-and-trust/where-candidates-come-from",
+                  "zh-TW/docs/match-quality-and-trust/what-mira-can-and-cant-do",
+                  "zh-TW/docs/match-quality-and-trust/privacy-policy"
+                ]
+              },
+              {
+                "group": "帳戶與設定",
+                "pages": [
+                  "zh-TW/docs/account/sign-in-and-account",
+                  "zh-TW/docs/account/languages",
+                  "zh-TW/docs/account/credits"
+                ]
+              },
+              {
+                "group": "說明與常見問題",
+                "pages": [
+                  "zh-TW/docs/help/general-faq",
+                  "zh-TW/docs/help/sourcing-faq",
+                  "zh-TW/docs/help/troubleshooting",
+                  "zh-TW/docs/help/changelog"
+                ]
+              }
             ]
           }
-        ],
-        "navbar": {
-          "links": [
-            {
-              "label": "文件",
-              "href": "/zh-TW/docs/index"
-            },
-            {
-              "label": "部落格",
-              "href": "https://blog.miraday.ai/"
-            },
-            {
-              "label": "登入",
-              "href": "https://www.miraday.ai/sign-in?lang=zh-TW"
-            }
-          ],
-          "primary": {
-            "type": "button",
-            "label": "免費開始",
-            "href": "https://www.miraday.ai/sign-up?lang=zh-TW"
-          }
-        }
+        ]
       },
       {
         "language": "ja",
-        "groups": [
+        "tabs": [
           {
-            "group": "MiraDay ドキュメント",
-            "pages": [
-              "ja/docs/index"
-            ]
-          },
-          {
-            "group": "MiraDay を知る",
-            "pages": [
-              "ja/docs/meet-mira/what-is-mira",
-              "ja/docs/meet-mira/why-mira",
-              "ja/docs/meet-mira/how-mira-works",
-              "ja/docs/meet-mira/agent-teams",
-              "ja/docs/meet-mira/key-concepts"
-            ]
-          },
-          {
-            "group": "はじめに",
-            "pages": [
-              "ja/docs/get-started/create-your-account",
-              "ja/docs/get-started/quick-start",
-              "ja/docs/get-started/review-your-candidates",
-              "ja/docs/get-started/export-and-share"
-            ]
-          },
-          {
-            "group": "ソーシング",
-            "pages": [
-              "ja/docs/sourcing/agentic-search",
-              "ja/docs/sourcing/search-filters-and-criteria",
-              "ja/docs/sourcing/voice-input",
-              "ja/docs/sourcing/candidate-profile",
-              "ja/docs/sourcing/refine-and-export",
-              "ja/docs/sourcing/tips-and-best-practices"
-            ]
-          },
-          {
-            "group": "ツールと連携",
-            "pages": [
-              "ja/docs/tools-and-teamwork/skills",
-              "ja/docs/tools-and-teamwork/files",
-              "ja/docs/tools-and-teamwork/contacts",
-              "ja/docs/tools-and-teamwork/connectors",
-              "ja/docs/tools-and-teamwork/mira-browser-extension"
-            ]
-          },
-          {
-            "group": "マッチ品質と信頼性",
-            "pages": [
-              "ja/docs/match-quality-and-trust/understanding-ai-matching",
-              "ja/docs/match-quality-and-trust/where-candidates-come-from",
-              "ja/docs/match-quality-and-trust/what-mira-can-and-cant-do",
-              "ja/docs/match-quality-and-trust/privacy-policy"
-            ]
-          },
-          {
-            "group": "アカウントと設定",
-            "pages": [
-              "ja/docs/account/sign-in-and-account",
-              "ja/docs/account/languages",
-              "ja/docs/account/credits"
-            ]
-          },
-          {
-            "group": "ヘルプと FAQ",
-            "pages": [
-              "ja/docs/help/general-faq",
-              "ja/docs/help/sourcing-faq",
-              "ja/docs/help/troubleshooting",
-              "ja/docs/help/changelog"
+            "tab": "ドキュメント",
+            "groups": [
+              {
+                "group": "MiraDay ドキュメント",
+                "pages": [
+                  "ja/docs/index"
+                ]
+              },
+              {
+                "group": "MiraDay を知る",
+                "pages": [
+                  "ja/docs/meet-mira/what-is-mira",
+                  "ja/docs/meet-mira/why-mira",
+                  "ja/docs/meet-mira/how-mira-works",
+                  "ja/docs/meet-mira/agent-teams",
+                  "ja/docs/meet-mira/key-concepts"
+                ]
+              },
+              {
+                "group": "はじめに",
+                "pages": [
+                  "ja/docs/get-started/create-your-account",
+                  "ja/docs/get-started/quick-start",
+                  "ja/docs/get-started/review-your-candidates",
+                  "ja/docs/get-started/export-and-share"
+                ]
+              },
+              {
+                "group": "ソーシング",
+                "pages": [
+                  "ja/docs/sourcing/agentic-search",
+                  "ja/docs/sourcing/search-filters-and-criteria",
+                  "ja/docs/sourcing/voice-input",
+                  "ja/docs/sourcing/candidate-profile",
+                  "ja/docs/sourcing/refine-and-export",
+                  "ja/docs/sourcing/tips-and-best-practices"
+                ]
+              },
+              {
+                "group": "ツールと連携",
+                "pages": [
+                  "ja/docs/tools-and-teamwork/skills",
+                  "ja/docs/tools-and-teamwork/files",
+                  "ja/docs/tools-and-teamwork/contacts",
+                  "ja/docs/tools-and-teamwork/connectors",
+                  "ja/docs/tools-and-teamwork/mira-browser-extension"
+                ]
+              },
+              {
+                "group": "マッチ品質と信頼性",
+                "pages": [
+                  "ja/docs/match-quality-and-trust/understanding-ai-matching",
+                  "ja/docs/match-quality-and-trust/where-candidates-come-from",
+                  "ja/docs/match-quality-and-trust/what-mira-can-and-cant-do",
+                  "ja/docs/match-quality-and-trust/privacy-policy"
+                ]
+              },
+              {
+                "group": "アカウントと設定",
+                "pages": [
+                  "ja/docs/account/sign-in-and-account",
+                  "ja/docs/account/languages",
+                  "ja/docs/account/credits"
+                ]
+              },
+              {
+                "group": "ヘルプと FAQ",
+                "pages": [
+                  "ja/docs/help/general-faq",
+                  "ja/docs/help/sourcing-faq",
+                  "ja/docs/help/troubleshooting",
+                  "ja/docs/help/changelog"
+                ]
+              }
             ]
           }
-        ],
-        "navbar": {
-          "links": [
-            {
-              "label": "ドキュメント",
-              "href": "/ja/docs/index"
-            },
-            {
-              "label": "ブログ",
-              "href": "https://blog.miraday.ai/"
-            },
-            {
-              "label": "ログイン",
-              "href": "https://www.miraday.ai/sign-in?lang=ja"
-            }
-          ],
-          "primary": {
-            "type": "button",
-            "label": "無料で始める",
-            "href": "https://www.miraday.ai/sign-up?lang=ja"
-          }
-        }
+        ]
       }
     ]
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Docs",
-        "href": "/en/docs/index"
-      },
-      {
-        "label": "Blog",
-        "href": "https://blog.miraday.ai/"
-      },
-      {
-        "label": "Log In",
-        "href": "https://www.miraday.ai/sign-in?lang=en"
-      }
-    ],
     "primary": {
       "type": "button",
-      "label": "Start for free",
-      "href": "https://www.miraday.ai/sign-up?lang=en"
+      "label": "Open MiraDay",
+      "href": "https://app.miraday.ai"
     }
   },
   "contextual": {
